@@ -36,7 +36,7 @@ const serviceBlocks = [
   {
     icon: Bot,
     title: 'Operacion con agentes',
-    text: 'Implementacion y entrenamiento de agentes para pauta digital, gestion de redes, asistentes comerciales e internos, respuestas operativas y seguimiento.',
+    text: 'Implementacion de agentes e IA para pauta digital, parrilla generadora, hub centralizado de redes sociales, asistentes internos y seguimiento operativo.',
   },
   {
     icon: Sparkles,
@@ -47,7 +47,7 @@ const serviceBlocks = [
 
 const capabilities = [
   ['Diseño paramétrico CAD', PenTool],
-  ['Pauta digital asistida por agentes y seguimiento de rendimiento', Share2],
+  ['Parrilla generadora y hub centralizado para manejo de redes sociales', Share2],
   ['Asistentes de gestion interna y externa, incluyendo Violeta', MessageSquare],
   ['Herramientas para crear imágenes y videos alineados a la marca', Image],
   ['Email marketing, newsletters, nurturing y lead generation', Mail],
@@ -59,7 +59,7 @@ const capabilities = [
 const monthlyFlow = [
   'Diagnostico y priorizacion del backlog tecnologico.',
   'Ejecucion de mejoras web, automatizaciones y piezas operativas.',
-  'Seguimiento de canales, pauta, contenido y captacion.',
+  'Seguimiento de canales, publicaciones, pauta, contenido y captacion.',
   'Reporte mensual con avances, prioridades y proximas decisiones.',
 ];
 
