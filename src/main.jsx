@@ -39,15 +39,15 @@ const serviceBlocks = [
   {
     icon: Sparkles,
     title: 'Tecnologia creativa de punta',
-    text: 'Uso de herramientas avanzadas para generar imagenes, videos, piezas de marca y material de apoyo para ventas, reps, email y contenido social.',
+    text: 'Implementacion de herramientas avanzadas para que el equipo pueda crear imagenes, videos, piezas de marca y material de apoyo para ventas, reps, email y contenido social.',
   },
 ];
 
 const capabilities = [
-  ['Diseno para Metricool / Meta / catalogos comerciales', PenTool],
+  ['Diseño paramétrico CAD', PenTool],
   ['Pauta digital asistida por agentes y seguimiento de rendimiento', Share2],
   ['Asistentes de gestion interna y externa, incluyendo Violeta', MessageSquare],
-  ['Generacion de imagenes y videos alineados a la marca', Image],
+  ['Herramientas para crear imágenes y videos alineados a la marca', Image],
   ['Email marketing, newsletters, nurturing y lead generation', Mail],
   ['Portal para representantes y material comercial actualizado', Store],
   ['CRM inteligente, reportes ejecutivos y pipeline comercial', FileBarChart],
@@ -64,8 +64,8 @@ const monthlyFlow = [
 const conditions = [
   'Contrato de gestion mensual como partner tecnologico.',
   'Incluye direccion, ejecucion, soporte y mejora continua de las iniciativas descritas.',
-  'No incluye pauta publicitaria, licencias externas, produccion fisica, compra de software ni costos de terceros.',
-  'La priorizacion mensual se define con el equipo Sixinch Americas segun impacto comercial y urgencia operativa.',
+  'No incluye costos de pauta publicitaria, licencias externas, produccion fisica, compra de software ni costos de terceros; estos costos operativos son asumidos por Sixinch Americas.',
+  'Los entregables se trabajan bajo fechas pactadas con el equipo Sixinch Americas para mantener trazabilidad y orden.',
 ];
 
 function LogoMark() {
@@ -125,7 +125,7 @@ function App() {
           <h2>Un solo partner para mantener la operacion digital viva, ordenada y creciendo.</h2>
         </div>
         <p>
-          El paquete concentra direccion tecnologica, ejecucion creativa, automatizacion y soporte mensual. La idea no es vender una herramienta aislada, sino acompanar al equipo con una capacidad constante para convertir necesidades comerciales en soluciones digitales concretas.
+          El paquete concentra direccion tecnologica, automatizacion, herramientas creativas y soporte mensual. No buscamos reemplazar al equipo actual, sino proporcionarle herramientas y acompanamiento para que no necesite expandirse mas y pueda potenciar su eficiencia operativa actual.
         </p>
       </section>
 
@@ -197,6 +197,10 @@ function App() {
               <strong>Retainer mensual</strong>
             </div>
             <div className="detail-line">
+              <span>Forma de pago</span>
+              <strong>Mensual o quincenal, segun definicion interna del equipo</strong>
+            </div>
+            <div className="detail-line">
               <span>Enfoque</span>
               <strong>Web, agentes, marketing y sistemas</strong>
             </div>
@@ -238,4 +242,3 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(<App />);
-
