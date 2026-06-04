@@ -67,14 +67,26 @@ main {
 }
 
 .logo-mark {
-  display: inline-grid;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Montserrat', system-ui, sans-serif;
+  color: var(--black);
+  letter-spacing: 0;
+}
+
+.logo-mark img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.logo-mark div {
+  display: grid;
   grid-template-columns: auto auto;
   align-items: end;
   column-gap: 2px;
-  font-family: 'Montserrat', system-ui, sans-serif;
-  color: var(--black);
   line-height: 0.82;
-  letter-spacing: 0;
 }
 
 .logo-mark span,

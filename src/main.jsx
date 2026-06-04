@@ -20,6 +20,8 @@ import {
 } from 'lucide-react';
 import './styles.css';
 
+const sixinchCrownUrl = 'https://szlfbylxjeqvoaetyove.supabase.co/storage/v1/object/public/public-media/crown.png';
+
 const serviceBlocks = [
   {
     icon: Globe,
@@ -71,9 +73,12 @@ const conditions = [
 function LogoMark() {
   return (
     <div className="logo-mark" aria-label="Sixinch Americas">
-      <span>six</span>
-      <strong>inch</strong>
-      <small>americas</small>
+      <img src={sixinchCrownUrl} alt="" aria-hidden="true" />
+      <div>
+        <span>six</span>
+        <strong>inch</strong>
+        <small>americas</small>
+      </div>
     </div>
   );
 }
