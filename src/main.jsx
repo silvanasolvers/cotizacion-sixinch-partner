@@ -45,7 +45,7 @@ const serviceBlocks = [
 ];
 
 const capabilities = [
-  ['Violeta como capacidad comercial de atencion y seguimiento', MessageSquare],
+  ['Violeta ya construida con habilidades y conocimientos base para apoyar al equipo', MessageSquare],
   ['Parrilla generadora y hub centralizado para redes sociales', Share2],
   ['Material comercial actualizado para representantes y distribuidores', Store],
   ['Herramientas para crear imagenes y videos alineados a la marca', Image],
@@ -56,34 +56,36 @@ const capabilities = [
 ];
 
 const monthlyFlow = [
-  'Recepcion y priorizacion de solicitudes web del mes.',
-  'Ejecucion de hasta 10 cambios incluidos en la pagina.',
-  'Revision preventiva de enlaces, contenido, estabilidad y experiencia.',
-  'Reporte corto con cambios hechos, pendientes y proximas decisiones.',
+  'Recepcion y priorizacion de cambios web, poderes para Violeta y nuevas necesidades del equipo.',
+  'Ejecucion de hasta 10 cambios incluidos en la pagina y avance de capacidades tecnologicas priorizadas.',
+  'Actualizacion de conocimientos, pruebas y ajustes para que Violeta siga siendo util en el uso diario.',
+  'Reporte corto con cambios hechos, poderes entregados, pendientes y proximas decisiones.',
 ];
 
 const conditions = [
-  'La Administracion Web Master tiene un valor fijo de USD 535 mensuales.',
-  'Incluye hasta 10 cambios mensuales sobre paginas, textos, imagenes, enlaces, botones o secciones existentes.',
+  'La Administracion Web Master individual tiene un valor fijo de USD 535 mensuales.',
+  'La Gestion Mensual Integral tiene un valor de USD 2,100 mensuales e incluye administracion web mas evolucion de capacidades tecnologicas.',
+  'La Gestion Mensual Integral incluye hasta 10 cambios mensuales sobre la pagina y una agenda priorizada de nuevos poderes para Violeta, automatizaciones o herramientas internas.',
   'Cambios adicionales: USD 45 por cambio simple, USD 120 por bloque avanzado y USD 260 por landing interna o pagina corta.',
-  'El Programa de Capacidades Operativas es una segunda oferta separada y opcional, con valor de USD 1,650 mensuales.',
-  'Por demanda, una capacidad individual inicia desde USD 4,800; cada nueva habilidad adicional desde USD 1,450; y cada ciclo de ajuste desde USD 450.',
+  'Violeta ya existe con habilidades basicas. No se cobra construirla desde cero; se cobran los nuevos poderes, ajustes y capacidades que Sixinch quiera agregar.',
+  'Por demanda, cada poder simple inicia desde USD 850, cada poder avanzado desde USD 1,450, cada capacidad estrategica desde USD 2,800 y cada ciclo de ajuste desde USD 450.',
+  'El escenario por demanda de USD 18,060 estima 6 meses de web, 6 poderes simples, 3 poderes avanzados y 12 ciclos de ajuste.',
   'No incluye pauta publicitaria, licencias externas, produccion fisica, compra de software ni costos de terceros.',
-  'Ambas ofertas pueden aprobarse juntas o por separado, con alcance, responsables y fechas pactadas con Sixinch Americas.',
+  'La recomendacion es mensual si Sixinch espera evolucion continua; el pago por demanda conviene solo cuando se trata de una necesidad aislada.',
 ];
 
 const webComparisonRows = [
   ['Administracion web durante 12 meses', 'USD 6,420', 'USD 9,300 estimados'],
   ['10 cambios mensuales incluidos', 'Incluido', 'Hasta USD 5,400 al ano solo en cambios simples'],
   ['Soporte y prevencion', 'Continuo', 'Se paga cuando aparece la urgencia'],
-  ['Capacidades Operativas', 'No incluidas en esta mensualidad', 'Se aprueban en una oferta separada'],
+  ['Nuevos poderes para Violeta', 'No incluidos en web basica', 'Incluidos dentro de la Gestion Mensual Integral'],
 ];
 
 const capabilityComparisonRows = [
-  ['Programa durante 6 meses', 'USD 9,900', 'USD 14,750 estimados'],
-  ['Violeta + nuevas habilidades', 'Roadmap mensual incluido', 'USD 4,800 inicial + USD 1,450 por habilidad'],
-  ['Ajustes, pruebas y medicion', 'Incluidos dentro del ciclo mensual', 'USD 450 por cada ciclo de ajuste'],
-  ['Decision recomendada', 'Mensualidad fija si habra evolucion continua', 'Pago unico solo si es una necesidad aislada'],
+  ['Gestion integral durante 6 meses', 'USD 12,600', 'USD 18,060 estimados'],
+  ['Web + Violeta ya existente', 'Web, soporte y evolucion bajo una misma gestion', 'USD 3,210 de web + poderes facturados uno a uno'],
+  ['Nuevos poderes y habilidades', 'Agenda mensual priorizada incluida', 'USD 850 simple, USD 1,450 avanzado, USD 2,800 estrategico'],
+  ['Ajustes, pruebas y medicion', 'Incluidos dentro de la gestion mensual', 'USD 450 por cada ciclo de ajuste'],
 ];
 
 function LogoMark() {
@@ -113,13 +115,13 @@ function App() {
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Propuesta de continuidad digital</p>
-            <h1>Dos ofertas separadas. Una decision clara.</h1>
+            <h1>Gestion mensual o poderes por demanda.</h1>
             <p className="hero-text">
-              La Administracion Web Master mantiene la pagina por USD 535 al mes. El Programa de Capacidades Operativas, donde entran Violeta, CRM, contenido, reportes o automatizaciones, es una segunda oferta independiente con una mensualidad propia.
+              Violeta ya existe con habilidades y conocimientos base para apoyar al equipo Sixinch. La decision es si quieren pagar cada nuevo poder por separado o entrar en una Gestion Mensual Integral que incluye la web, mejoras de Violeta y nuevos desarrollos tecnologicos a medida que trabajamos juntos.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#cotizacion">
-                Ver USD 535 / mes
+                Ver gestion mensual
               </a>
               <a className="button secondary" href="#comparativo">
                 Ver comparativo
@@ -143,10 +145,10 @@ function App() {
       <section className="intro-band">
         <div>
           <p className="section-kicker">Para el equipo de Sixinch Americas</p>
-          <h2>La pagina se administra con una mensualidad. Las capacidades operativas se venden aparte.</h2>
+          <h2>Si solo quieren web, existe un valor fijo. Si van a pedir poderes, conviene una gestion mensual.</h2>
         </div>
         <p>
-          El objetivo es que Sixinch pueda decidir con orden. Primero, una base fija para cuidar la web. Segundo, una oferta distinta para construir capacidades como Violeta sin llamarlo desarrollo tecnologico y sin mezclarlo con el mantenimiento.
+          El objetivo es que hagan numeros con claridad. Pagar por cada habilidad puede parecer flexible al inicio, pero se vuelve mas costoso cuando empiezan a sumar poderes, ajustes, pruebas, contenidos, reportes o automatizaciones.
         </p>
       </section>
 
@@ -171,10 +173,10 @@ function App() {
 
       <section className="section split-section">
         <div className="sticky-title">
-          <p className="section-kicker">Oferta 2 separada</p>
-          <h2>Programa de Capacidades Operativas: el nombre correcto para lo que antes sonaba a desarrollo.</h2>
+          <p className="section-kicker">Violeta y nuevos poderes</p>
+          <h2>Violeta ya esta construida. Lo que crece son sus poderes.</h2>
           <p>
-            Violeta y las demas iniciativas no hacen parte de los USD 535 de la web. Se presentan como una oferta aparte para que el equipo atienda mejor, produzca mas rapido, venda con mas orden o mida con mas claridad.
+            La base de Violeta ya ayuda al equipo con conocimientos y habilidades iniciales. Lo que se cotiza son nuevas habilidades, flujos, automatizaciones, reportes o herramientas que Sixinch vaya necesitando con el uso real.
           </p>
         </div>
         <div className="capability-list">
@@ -192,8 +194,8 @@ function App() {
 
       <section className="process-section">
         <div className="section-heading">
-          <p className="section-kicker">Operacion mensual</p>
-          <h2>Un ciclo claro para que cada mes tenga control.</h2>
+          <p className="section-kicker">Gestion mensual</p>
+          <h2>Un ciclo claro para que web y Violeta evolucionen con control.</h2>
         </div>
         <div className="process-grid">
           {monthlyFlow.map((item, index) => (
@@ -208,26 +210,26 @@ function App() {
       <section className="quote-section" id="cotizacion">
         <div className="quote-card">
           <div>
-            <p className="section-kicker">Oferta 1 | Web</p>
-            <h2>USD 535</h2>
-            <p className="quote-subtitle">Administracion Web Master para mantener la pagina de Sixinch activa, cuidada y actualizada.</p>
+            <p className="section-kicker">Recomendado | Gestion Mensual Integral</p>
+            <h2>USD 2,100</h2>
+            <p className="quote-subtitle">Una mensualidad para mantener la pagina, evolucionar Violeta y desarrollar nuevos poderes tecnologicos segun las prioridades de Sixinch.</p>
           </div>
           <div className="quote-details">
             <div className="detail-line">
               <span>Modalidad</span>
-              <strong>Mensualidad fija</strong>
+              <strong>Gestion mensual integral</strong>
             </div>
             <div className="detail-line">
-              <span>Incluye</span>
-              <strong>10 cambios mensuales de pagina</strong>
+              <span>Web incluida</span>
+              <strong>Administracion Web Master + 10 cambios mensuales</strong>
             </div>
             <div className="detail-line">
-              <span>Adicionales</span>
-              <strong>Desde USD 45 por cambio simple fuera del alcance</strong>
+              <span>Violeta incluida</span>
+              <strong>Gestion de conocimientos, nuevos poderes, pruebas y ajustes</strong>
             </div>
             <div className="detail-line">
-              <span>No incluye</span>
-              <strong>Violeta, CRM, automatizaciones o nuevas capacidades operativas</strong>
+              <span>Opcion minima</span>
+              <strong>Solo mantenimiento web: USD 535 / mes sin nuevos poderes</strong>
             </div>
           </div>
         </div>
@@ -235,27 +237,27 @@ function App() {
 
       <section className="section activation-section">
         <div className="section-heading">
-          <p className="section-kicker">Oferta 2 | Operacion</p>
-          <h2>Para Violeta y nuevas habilidades conviene una mensualidad separada.</h2>
+          <p className="section-kicker">Recomendacion comercial</p>
+          <h2>Para Violeta, web y nuevos desarrollos conviene una gestion mensual integral.</h2>
         </div>
         <div className="activation-grid">
           <article className="activation-card primary-activation">
             <Brain size={28} />
-            <span>Programa mensual</span>
-            <h3>USD 1,650 / mes</h3>
-            <p>Incluye roadmap mensual, evolucion de Violeta, nuevas habilidades operativas, pruebas, ajustes y seguimiento de adopcion.</p>
+            <span>Gestion mensual integral</span>
+            <h3>USD 2,100 / mes</h3>
+            <p>Incluye mantenimiento web, evolucion de Violeta, nuevos poderes priorizados, pruebas, ajustes, soporte y seguimiento de adopcion.</p>
           </article>
           <article className="activation-card">
             <Sparkles size={28} />
-            <span>Compra por demanda</span>
-            <h3>USD 4,800</h3>
-            <p>Activacion individual de una capacidad como Violeta. Funciona para una necesidad puntual, pero se vuelve mas costosa si se siguen sumando habilidades.</p>
+            <span>Poder simple por demanda</span>
+            <h3>USD 850</h3>
+            <p>Una habilidad puntual para Violeta: nuevo conocimiento, respuesta, plantilla, mini flujo o ajuste operativo concreto.</p>
           </article>
           <article className="activation-card">
             <Handshake size={28} />
-            <span>Nueva habilidad adicional</span>
-            <h3>USD 1,450</h3>
-            <p>Cada nueva habilidad, flujo, tablero, automatizacion o mejora fuera del alcance inicial se cotiza aparte cuando no existe mensualidad operativa.</p>
+            <span>Poder avanzado por demanda</span>
+            <h3>USD 1,450+</h3>
+            <p>Automatizacion, tablero, integracion, flujo comercial o capacidad mas compleja. Si se piden varias al mes, la gestion mensual sale mas eficiente.</p>
           </article>
         </div>
       </section>
@@ -286,12 +288,12 @@ function App() {
           </div>
         </div>
 
-        <div className="comparison-label comparison-label-spaced">Oferta 2: Programa de Capacidades Operativas</div>
+        <div className="comparison-label comparison-label-spaced">Recomendado: Gestion Mensual Integral</div>
         <div className="comparison-table" role="table" aria-label="Comparacion del programa de capacidades operativas">
           <div className="comparison-row comparison-head" role="row">
             <span role="columnheader">Escenario</span>
-            <span role="columnheader">Con USD 1,650 / mes</span>
-            <span role="columnheader">Por demanda</span>
+            <span role="columnheader">Con USD 2,100 / mes</span>
+            <span role="columnheader">Web + poderes por demanda</span>
           </div>
           {capabilityComparisonRows.map(([scenario, monthly, demand]) => (
             <div className="comparison-row" role="row" key={scenario}>
@@ -302,8 +304,8 @@ function App() {
           ))}
           <div className="comparison-row comparison-total" role="row">
             <span role="cell">Lectura financiera</span>
-            <strong role="cell">6 meses: USD 9,900 con continuidad y prioridades claras</strong>
-            <strong role="cell">6 meses por demanda: aprox. USD 14,750 si agregan habilidades y ajustes</strong>
+            <strong role="cell">6 meses: USD 12,600 con web, Violeta y evolucion continua</strong>
+            <strong role="cell">6 meses por demanda: aprox. USD 18,060 si agregan poderes, ajustes y pruebas</strong>
           </div>
         </div>
       </section>
@@ -330,7 +332,7 @@ function App() {
         </div>
         <div className="footer-badge">
           <Handshake size={18} />
-          <span>Dos ofertas separadas</span>
+          <span>Gestion Mensual Integral</span>
         </div>
       </footer>
     </main>
