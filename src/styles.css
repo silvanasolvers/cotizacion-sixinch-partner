@@ -552,6 +552,25 @@ footer {
   padding-top: 76px;
 }
 
+.comparison-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  margin-bottom: 14px;
+  padding: 0 14px;
+  background: var(--black);
+  color: var(--white);
+  font-family: 'Montserrat', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.comparison-label-spaced {
+  margin-top: 42px;
+}
+
 .comparison-table {
   display: grid;
   border: 1px solid var(--line);
