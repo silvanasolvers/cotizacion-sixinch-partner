@@ -8,11 +8,7 @@ import {
   FileBarChart,
   Globe,
   Handshake,
-  Image,
-  Mail,
   MessageSquare,
-  PenTool,
-  Share2,
   Sparkles,
   Store,
   Wrench,
@@ -29,8 +25,8 @@ const serviceBlocks = [
   },
   {
     icon: Wrench,
-    title: 'Mesa de cambios incluida',
-    text: 'Hasta 10 cambios mensuales de pagina incluidos. Despues de ese alcance, cada solicitud adicional tiene una tarifa clara y predecible.',
+    title: 'Cambios sin limite',
+    text: 'La mensualidad permite atender cambios de pagina sin limite fijo, priorizados con el equipo Sixinch dentro del ciclo mensual de trabajo.',
   },
   {
     icon: Check,
@@ -45,46 +41,46 @@ const serviceBlocks = [
 ];
 
 const capabilities = [
-  ['Violeta ya construida con habilidades y conocimientos base para apoyar al equipo', MessageSquare],
-  ['Parrilla generadora y hub centralizado para redes sociales', Share2],
-  ['Material comercial actualizado para representantes y distribuidores', Store],
-  ['Herramientas para crear imagenes y videos alineados a la marca', Image],
-  ['Email marketing, newsletters, nurturing y lead generation', Mail],
-  ['CRM inteligente, reportes ejecutivos y pipeline comercial', FileBarChart],
-  ['Diseño paramétrico CAD y apoyo a flujos de producto', PenTool],
-  ['Modernizacion operativa por etapas, sin inflar la mensualidad base', DatabaseZap],
+  ['Violeta se entrega con todo lo laborado hasta el momento', MessageSquare],
+  ['Habilidades y conocimientos base disponibles para que el equipo pueda conocerla', Brain],
+  ['Uso inicial orientado a validar que tan util seria para la operacion de Sixinch', Check],
+  ['Optimizacion futura definida a partir de hallazgos reales del equipo', DatabaseZap],
+  ['Configurador como herramienta adicional de apoyo comercial y operativo', Store],
+  ['Gestion mensual del configurador para ajustes, soporte y seguimiento', Wrench],
+  ['Materiales, reportes o mejoras futuras se priorizan despues de la validacion', FileBarChart],
+  ['Cada nuevo alcance se aprueba con claridad antes de iniciar', Handshake],
 ];
 
 const monthlyFlow = [
   'Recepcion y priorizacion de solicitudes web del mes.',
-  'Ejecucion de hasta 10 cambios incluidos en la pagina.',
+  'Ejecucion de cambios web sin limite fijo, organizados por prioridad y disponibilidad mensual.',
   'Revision preventiva de enlaces, contenido, estabilidad y experiencia.',
   'Reporte corto con cambios hechos, pendientes y proximas decisiones.',
 ];
 
 const conditions = [
-  'La Administracion Web Master tiene un valor fijo de USD 535 mensuales.',
-  'La mensualidad de la web incluye hasta 10 cambios mensuales sobre paginas, textos, imagenes, enlaces, botones o secciones existentes.',
-  'Cambios adicionales: USD 45 por cambio simple, USD 120 por bloque avanzado y USD 260 por landing interna o pagina corta.',
-  'Violeta ya existe con habilidades y conocimientos base para apoyar al equipo Sixinch. No tiene mensualidad adicional.',
-  'Los nuevos poderes de Violeta se aprueban por solicitud: USD 850 por poder simple, desde USD 1,450 por poder avanzado y desde USD 2,800 por capacidad estrategica.',
-  'Cada ciclo de ajuste, prueba o refinamiento posterior a una habilidad aprobada tiene un valor desde USD 450.',
+  'La Administracion Web Master tiene un valor fijo de USD 1,200 mensuales.',
+  'La mensualidad de la web incluye cambios sin limite fijo sobre paginas, textos, imagenes, enlaces, botones o secciones existentes.',
+  'El alcance se organiza por prioridad mensual para mantener orden, trazabilidad y buena ejecucion.',
+  'El configurador tiene un valor de implementacion de USD 1,500.',
+  'La gestion mensual del configurador tiene un valor de USD 300 mensuales.',
+  'Violeta se entrega como obsequio con todo lo laborado hasta el momento para que Sixinch pueda conocer la herramienta, usarla con el equipo y evaluar su utilidad real.',
+  'La optimizacion futura de Violeta se define despues de que Sixinch pruebe la herramienta y determine que ajustes o mejoras necesita.',
   'No incluye pauta publicitaria, licencias externas, produccion fisica, compra de software ni costos de terceros.',
-  'La recomendacion es mantener la web con mensualidad fija y activar poderes de Violeta solo cuando Sixinch los necesite y apruebe.',
 ];
 
 const webComparisonRows = [
-  ['Administracion web durante 12 meses', 'USD 6,420', 'USD 9,300 estimados'],
-  ['10 cambios mensuales incluidos', 'Incluido', 'Hasta USD 5,400 al ano solo en cambios simples'],
+  ['Administracion web durante 12 meses', 'USD 14,400', 'Mayor costo si cada ajuste se cotiza por separado'],
+  ['Cambios mensuales de pagina', 'Sin limite fijo', 'Cada solicitud requiere aprobacion y cotizacion individual'],
   ['Soporte y prevencion', 'Continuo', 'Se paga cuando aparece la urgencia'],
-  ['Violeta', 'Sin mensualidad adicional', 'Nuevos poderes se cotizan por solicitud'],
+  ['Control operativo', 'Prioridades, seguimiento y trazabilidad mensual', 'Mas espera, mas aprobaciones y mas costos sueltos'],
 ];
 
 const capabilityComparisonRows = [
-  ['Violeta base', 'Ya disponible para el equipo', 'Sin mensualidad adicional'],
-  ['Poder simple', 'Se aprueba cuando sea necesario', 'USD 850 por solicitud'],
-  ['Poder avanzado', 'Se define por alcance antes de iniciar', 'Desde USD 1,450'],
-  ['Capacidad estrategica', 'Requiere alcance, pruebas y entregable formal', 'Desde USD 2,800 + ajustes desde USD 450'],
+  ['Configurador digital', 'Implementacion inicial', 'USD 1,500'],
+  ['Gestion del configurador', 'Acompanamiento, ajustes y soporte mensual', 'USD 300 / mes'],
+  ['Violeta', 'Obsequio del trabajo realizado hasta el momento', 'Sin costo inicial y sin mensualidad'],
+  ['Optimizacion futura de Violeta', 'Se define despues de la prueba con el equipo', 'Alcance por aprobar si Sixinch lo solicita'],
 ];
 
 function LogoMark() {
@@ -114,9 +110,9 @@ function App() {
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Propuesta de continuidad digital</p>
-            <h1>Web mensual. Violeta por poderes.</h1>
+            <h1>Web sin limite. Configurador y Violeta.</h1>
             <p className="hero-text">
-              Sixinch cuenta con una ruta clara: Administracion Web Master por USD 535 al mes para mantener la pagina activa, y Violeta sin mensualidad adicional. Los nuevos poderes de Violeta se activan por solicitud, solo cuando el equipo los necesite y los apruebe.
+              Sixinch cuenta con una propuesta clara: Administracion Web Master por USD 1,200 al mes con cambios sin limite fijo, configurador por USD 1,500 con gestion mensual de USD 300, y Violeta como obsequio del trabajo realizado hasta el momento.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#cotizacion">
@@ -144,10 +140,10 @@ function App() {
       <section className="intro-band">
         <div>
           <p className="section-kicker">Para el equipo de Sixinch Americas</p>
-          <h2>Una mensualidad para la pagina. Nuevos poderes de Violeta solo bajo aprobacion.</h2>
+          <h2>Una mensualidad para administrar la pagina con libertad de cambios.</h2>
         </div>
         <p>
-          El objetivo es separar lo recurrente de lo evolutivo. La pagina requiere continuidad mensual; Violeta ya esta construida y sus nuevas habilidades se cotizan como pagos puntuales para que Sixinch conserve control sobre cada decision.
+          El objetivo es que Sixinch tenga una web activa, cuidada y flexible, sin convertir cada ajuste en una cotizacion. El configurador se incorpora como un entregable adicional y Violeta se entrega para que el equipo pueda conocerla, probarla y optimizarla con criterio.
         </p>
       </section>
 
@@ -172,10 +168,10 @@ function App() {
 
       <section className="section split-section">
         <div className="sticky-title">
-          <p className="section-kicker">Violeta y nuevos poderes</p>
-          <h2>Violeta ya esta construida. Lo que crece son sus poderes.</h2>
+          <p className="section-kicker">Violeta obsequiada</p>
+          <h2>Violeta se entrega como obsequio para que Sixinch la conozca en uso real.</h2>
           <p>
-            La base de Violeta ya ayuda al equipo con conocimientos y habilidades iniciales. Lo que se cotiza son nuevas habilidades, flujos, automatizaciones, reportes o herramientas que Sixinch vaya necesitando con el uso real.
+            Todo lo laborado hasta el momento queda a disposicion de Sixinch para que el equipo explore la herramienta, identifique oportunidades y determine que tan util puede ser en su operacion diaria.
           </p>
         </div>
         <div className="capability-list">
@@ -210,8 +206,8 @@ function App() {
         <div className="quote-card">
           <div>
             <p className="section-kicker">Mensualidad recomendada | Web</p>
-            <h2>USD 535</h2>
-            <p className="quote-subtitle">Administracion Web Master para mantener la pagina de Sixinch activa, cuidada y actualizada cada mes.</p>
+            <h2>USD 1,200</h2>
+            <p className="quote-subtitle">Administracion Web Master para mantener la pagina de Sixinch activa, cuidada y actualizada, con cambios sin limite fijo cada mes.</p>
           </div>
           <div className="quote-details">
             <div className="detail-line">
@@ -220,15 +216,15 @@ function App() {
             </div>
             <div className="detail-line">
               <span>Incluye</span>
-              <strong>10 cambios mensuales de pagina</strong>
+              <strong>Cambios web sin limite fijo</strong>
             </div>
             <div className="detail-line">
-              <span>Adicionales web</span>
-              <strong>Desde USD 45 por cambio simple fuera del alcance</strong>
+              <span>Configurador</span>
+              <strong>USD 1,500 implementacion + USD 300 / mes gestion</strong>
             </div>
             <div className="detail-line">
               <span>Violeta</span>
-              <strong>Sin mensualidad; nuevos poderes por pago puntual</strong>
+              <strong>Obsequio del trabajo realizado hasta el momento</strong>
             </div>
           </div>
         </div>
@@ -236,27 +232,27 @@ function App() {
 
       <section className="section activation-section">
         <div className="section-heading">
-          <p className="section-kicker">Violeta | Poderes por solicitud</p>
-          <h2>Violeta no tiene mensualidad. Sus nuevos poderes se aprueban uno por uno.</h2>
+          <p className="section-kicker">Entregables adicionales</p>
+          <h2>Configurador con gestion mensual. Violeta como obsequio para el equipo.</h2>
         </div>
         <div className="activation-grid">
           <article className="activation-card primary-activation">
             <Brain size={28} />
-            <span>Violeta existente</span>
-            <h3>Sin mensualidad</h3>
-            <p>Violeta ya cuenta con habilidades y conocimientos base para apoyar al equipo Sixinch. No se cobra una mensualidad por mantenerla activa.</p>
+            <span>Violeta</span>
+            <h3>Obsequio</h3>
+            <p>Se entrega todo lo laborado hasta el momento para que Sixinch pueda conocer la herramienta, probarla con el equipo y optimizarla con base en uso real.</p>
           </article>
           <article className="activation-card">
             <Sparkles size={28} />
-            <span>Poder simple por solicitud</span>
-            <h3>USD 850</h3>
-            <p>Nuevo conocimiento, respuesta, plantilla, mini flujo o ajuste operativo concreto solicitado por Sixinch.</p>
+            <span>Configurador</span>
+            <h3>USD 1,500</h3>
+            <p>Implementacion del configurador como herramienta adicional para apoyar la experiencia comercial y operativa de Sixinch.</p>
           </article>
           <article className="activation-card">
             <Handshake size={28} />
-            <span>Poder avanzado por solicitud</span>
-            <h3>USD 1,450+</h3>
-            <p>Automatizacion, tablero, integracion, flujo comercial o capacidad mas compleja, con alcance aprobado antes de iniciar.</p>
+            <span>Gestion mensual configurador</span>
+            <h3>USD 300 / mes</h3>
+            <p>Acompanamiento mensual para ajustes, seguimiento, soporte y mejoras relacionadas con el configurador.</p>
           </article>
         </div>
       </section>
@@ -270,7 +266,7 @@ function App() {
         <div className="comparison-table" role="table" aria-label="Comparacion entre mensualidad y pagos puntuales">
           <div className="comparison-row comparison-head" role="row">
             <span role="columnheader">Escenario</span>
-            <span role="columnheader">Con USD 535 / mes</span>
+            <span role="columnheader">Con USD 1,200 / mes</span>
             <span role="columnheader">Pago puntual</span>
           </div>
           {webComparisonRows.map(([scenario, monthly, demand]) => (
@@ -282,17 +278,17 @@ function App() {
           ))}
           <div className="comparison-row comparison-total" role="row">
             <span role="cell">Decision recomendada</span>
-            <strong role="cell">Costo fijo, cambios incluidos y control mensual</strong>
+            <strong role="cell">Costo fijo, cambios sin limite fijo y control mensual</strong>
             <strong role="cell">Mas aprobaciones, mas espera y mas costos sueltos</strong>
           </div>
         </div>
 
-        <div className="comparison-label comparison-label-spaced">Violeta: poderes por aprobacion</div>
+        <div className="comparison-label comparison-label-spaced">Configurador y Violeta</div>
         <div className="comparison-table" role="table" aria-label="Comparacion del programa de capacidades operativas">
           <div className="comparison-row comparison-head" role="row">
             <span role="columnheader">Escenario</span>
-            <span role="columnheader">Estado recomendado</span>
-            <span role="columnheader">Pago puntual</span>
+            <span role="columnheader">Propuesta</span>
+            <span role="columnheader">Valor</span>
           </div>
           {capabilityComparisonRows.map(([scenario, monthly, demand]) => (
             <div className="comparison-row" role="row" key={scenario}>
@@ -303,8 +299,8 @@ function App() {
           ))}
           <div className="comparison-row comparison-total" role="row">
             <span role="cell">Lectura financiera</span>
-            <strong role="cell">Sixinch conserva control: Violeta no genera mensualidad fija.</strong>
-            <strong role="cell">Si se acumulan poderes, conviene priorizar y aprobar por etapas.</strong>
+            <strong role="cell">Sixinch recibe Violeta como obsequio para validar su utilidad.</strong>
+            <strong role="cell">El configurador se separa con implementacion y gestion mensual claras.</strong>
           </div>
         </div>
       </section>
@@ -331,7 +327,7 @@ function App() {
         </div>
         <div className="footer-badge">
           <Handshake size={18} />
-          <span>Web mensual + poderes puntuales</span>
+          <span>Web + configurador + Violeta</span>
         </div>
       </footer>
     </main>
