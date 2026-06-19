@@ -139,6 +139,7 @@ main {
 .hero-copy {
   max-width: 800px;
   min-width: 0;
+  width: 100%;
 }
 
 .eyebrow,
@@ -169,14 +170,21 @@ h2,
 h3 {
   font-family: 'Montserrat', system-ui, sans-serif;
   color: var(--black);
+  text-wrap: balance;
 }
 
 h1 {
   max-width: 900px;
   margin: 0;
-  font-size: clamp(44px, 7.2vw, 106px);
-  line-height: 0.91;
+  font-size: clamp(42px, 6.6vw, 94px);
+  line-height: 0.94;
   font-weight: 800;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+h1 span {
+  display: block;
 }
 
 .hero-text {
@@ -185,6 +193,8 @@ h1 {
   color: var(--muted);
   font-size: 19px;
   line-height: 1.6;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .hero-actions {
@@ -192,6 +202,7 @@ h1 {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 36px;
+  max-width: 100%;
 }
 
 .button {
@@ -257,6 +268,7 @@ h1 {
   font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 29px;
   line-height: 1.05;
+  overflow-wrap: anywhere;
 }
 
 .intro-band,
@@ -294,6 +306,7 @@ footer {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.7;
+  text-wrap: pretty;
 }
 
 .intro-band > *,
@@ -349,6 +362,7 @@ footer {
   margin: 0;
   color: var(--muted);
   line-height: 1.62;
+  text-wrap: pretty;
 }
 
 .split-section {
@@ -530,8 +544,8 @@ footer {
 
 .activation-card h3 {
   margin: 0 0 16px;
-  font-size: clamp(32px, 4.4vw, 60px);
-  line-height: 0.92;
+  font-size: clamp(30px, 4vw, 56px);
+  line-height: 0.96;
 }
 
 .activation-card.primary-activation h3 {
@@ -542,6 +556,7 @@ footer {
   margin: 0;
   color: var(--muted);
   line-height: 1.6;
+  text-wrap: pretty;
 }
 
 .activation-card.primary-activation p {
@@ -600,6 +615,7 @@ footer {
 
 .comparison-row strong {
   color: var(--black);
+  overflow-wrap: anywhere;
 }
 
 .comparison-head > * {
@@ -703,7 +719,7 @@ footer p {
 
 @media (max-width: 640px) {
   .hero-section {
-    padding: 20px;
+    padding: 18px;
   }
 
   .nav {
@@ -726,8 +742,36 @@ footer p {
     padding-top: 34px;
   }
 
+  .hero-copy,
+  .hero-actions,
+  .hero-text,
+  .hero-visual {
+    max-width: 300px;
+  }
+
   .hero-text {
     font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .eyebrow,
+  .section-kicker {
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  h1 {
+    font-size: clamp(30px, 9.4vw, 32px);
+    line-height: 1;
+  }
+
+  .intro-band h2,
+  .section-heading h2,
+  .sticky-title h2 {
+    font-size: clamp(28px, 9vw, 42px);
+    line-height: 1.02;
   }
 
   .hero-actions {
@@ -737,10 +781,25 @@ footer p {
 
   .button {
     width: 100%;
+    max-width: 100%;
   }
 
   .hero-visual {
     min-height: 360px;
+  }
+
+  .visual-caption {
+    padding: 22px;
+  }
+
+  .visual-caption span {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+  }
+
+  .visual-caption strong {
+    font-size: 22px;
+    line-height: 1.12;
   }
 
   .intro-band,
@@ -801,6 +860,15 @@ footer p {
 
   .quote-card {
     gap: 28px;
+  }
+
+  .quote-card h2 {
+    font-size: clamp(48px, 16vw, 72px);
+    line-height: 0.94;
+  }
+
+  .activation-card h3 {
+    font-size: clamp(30px, 12vw, 48px);
   }
 
   .detail-line {

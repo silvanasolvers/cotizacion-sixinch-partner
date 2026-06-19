@@ -42,13 +42,13 @@ const serviceBlocks = [
 
 const capabilities = [
   ['Violeta se entrega con todo lo laborado hasta el momento', MessageSquare],
-  ['Habilidades y conocimientos base disponibles para que el equipo pueda conocerla', Brain],
+  ['Desarrollo y ajustes hasta la satisfaccion total del equipo Sixinch', Brain],
   ['Uso inicial orientado a validar que tan util seria para la operacion de Sixinch', Check],
-  ['Optimizacion futura definida a partir de hallazgos reales del equipo', DatabaseZap],
+  ['Sin cobro de desarrollo de la herramienta en ningun momento', DatabaseZap],
   ['Configurador como herramienta adicional de apoyo comercial y operativo', Store],
   ['Gestion mensual del configurador para ajustes, soporte y seguimiento', Wrench],
-  ['Materiales, reportes o mejoras futuras se priorizan despues de la validacion', FileBarChart],
-  ['Cada nuevo alcance se aprueba con claridad antes de iniciar', Handshake],
+  ['Gestion mensual futura de Violeta solo despues de un acuerdo pertinente', FileBarChart],
+  ['El acuerdo posterior debe dejar satisfechas a todas las partes', Handshake],
 ];
 
 const monthlyFlow = [
@@ -62,10 +62,11 @@ const conditions = [
   'La Administracion Web Master tiene un valor fijo de USD 1,200 mensuales.',
   'La mensualidad de la web incluye cambios sin limite fijo sobre paginas, textos, imagenes, enlaces, botones o secciones existentes.',
   'El alcance se organiza por prioridad mensual para mantener orden, trazabilidad y buena ejecucion.',
-  'El configurador tiene un valor de implementacion de USD 1,500.',
+  'El configurador tiene un valor de implementacion de USD 2,500.',
   'La gestion mensual del configurador tiene un valor de USD 300 mensuales.',
-  'Violeta se entrega como obsequio con todo lo laborado hasta el momento para que Sixinch pueda conocer la herramienta, usarla con el equipo y evaluar su utilidad real.',
-  'La optimizacion futura de Violeta se define despues de que Sixinch pruebe la herramienta y determine que ajustes o mejoras necesita.',
+  'Violeta se entrega como obsequio con todo lo laborado hasta el momento y se desarrollara hasta la satisfaccion total del equipo Sixinch.',
+  'No se cobrara el desarrollo de Violeta en ningun momento.',
+  'Cuando Sixinch confirme que la herramienta es util para el equipo, se definira el negocio pertinente para una gestion mensual posterior, bajo un acuerdo que deje satisfechas a todas las partes.',
   'No incluye pauta publicitaria, licencias externas, produccion fisica, compra de software ni costos de terceros.',
 ];
 
@@ -77,10 +78,10 @@ const webComparisonRows = [
 ];
 
 const capabilityComparisonRows = [
-  ['Configurador digital', 'Implementacion inicial', 'USD 1,500'],
+  ['Configurador digital', 'Implementacion inicial', 'USD 2,500'],
   ['Gestion del configurador', 'Acompanamiento, ajustes y soporte mensual', 'USD 300 / mes'],
-  ['Violeta', 'Obsequio del trabajo realizado hasta el momento', 'Sin costo inicial y sin mensualidad'],
-  ['Optimizacion futura de Violeta', 'Se define despues de la prueba con el equipo', 'Alcance por aprobar si Sixinch lo solicita'],
+  ['Violeta', 'Obsequio del trabajo realizado y desarrollo hasta satisfaccion total', 'Sin cobro de desarrollo'],
+  ['Gestion futura de Violeta', 'Se define cuando Sixinch valide su utilidad', 'Gestion mensual posterior por acuerdo'],
 ];
 
 function LogoMark() {
@@ -110,9 +111,13 @@ function App() {
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Propuesta de continuidad digital</p>
-            <h1>Web sin limite. Configurador y Violeta.</h1>
+            <h1>
+              <span>Web sin limite.</span>
+              <span>Configurador.</span>
+              <span>Violeta.</span>
+            </h1>
             <p className="hero-text">
-              Sixinch cuenta con una propuesta clara: Administracion Web Master por USD 1,200 al mes con cambios sin limite fijo, configurador por USD 1,500 con gestion mensual de USD 300, y Violeta como obsequio del trabajo realizado hasta el momento.
+              Sixinch cuenta con una propuesta clara: Administracion Web Master por USD 1,200 al mes con cambios sin limite fijo, configurador por USD 2,500 con gestion mensual de USD 300, y Violeta como obsequio desarrollado hasta la satisfaccion total del equipo.
             </p>
             <div className="hero-actions">
               <a className="button primary" href="#cotizacion">
@@ -143,7 +148,7 @@ function App() {
           <h2>Una mensualidad para administrar la pagina con libertad de cambios.</h2>
         </div>
         <p>
-          El objetivo es que Sixinch tenga una web activa, cuidada y flexible, sin convertir cada ajuste en una cotizacion. El configurador se incorpora como un entregable adicional y Violeta se entrega para que el equipo pueda conocerla, probarla y optimizarla con criterio.
+          El objetivo es que Sixinch tenga una web activa, cuidada y flexible, sin convertir cada ajuste en una cotizacion. El configurador se incorpora como un entregable adicional y Violeta se entrega sin cobro de desarrollo para que el equipo pueda conocerla, probarla y optimizarla con criterio.
         </p>
       </section>
 
@@ -169,9 +174,9 @@ function App() {
       <section className="section split-section">
         <div className="sticky-title">
           <p className="section-kicker">Violeta obsequiada</p>
-          <h2>Violeta se entrega como obsequio para que Sixinch la conozca en uso real.</h2>
+          <h2>Violeta se entrega como obsequio y se desarrolla hasta la satisfaccion total del equipo.</h2>
           <p>
-            Todo lo laborado hasta el momento queda a disposicion de Sixinch para que el equipo explore la herramienta, identifique oportunidades y determine que tan util puede ser en su operacion diaria.
+            Todo lo laborado hasta el momento queda a disposicion de Sixinch. No se cobrara el desarrollo de esta herramienta; una gestion mensual futura se definira solo despues de validar su utilidad y acordar un negocio pertinente para todas las partes.
           </p>
         </div>
         <div className="capability-list">
@@ -220,11 +225,11 @@ function App() {
             </div>
             <div className="detail-line">
               <span>Configurador</span>
-              <strong>USD 1,500 implementacion + USD 300 / mes gestion</strong>
+              <strong>USD 2,500 implementacion + USD 300 / mes gestion</strong>
             </div>
             <div className="detail-line">
               <span>Violeta</span>
-              <strong>Obsequio del trabajo realizado hasta el momento</strong>
+              <strong>Obsequio, sin cobro de desarrollo</strong>
             </div>
           </div>
         </div>
@@ -240,12 +245,12 @@ function App() {
             <Brain size={28} />
             <span>Violeta</span>
             <h3>Obsequio</h3>
-            <p>Se entrega todo lo laborado hasta el momento para que Sixinch pueda conocer la herramienta, probarla con el equipo y optimizarla con base en uso real.</p>
+            <p>Se entrega todo lo laborado hasta el momento y se desarrollara hasta la satisfaccion total del equipo Sixinch, sin cobrar desarrollo de la herramienta.</p>
           </article>
           <article className="activation-card">
             <Sparkles size={28} />
             <span>Configurador</span>
-            <h3>USD 1,500</h3>
+            <h3>USD 2,500</h3>
             <p>Implementacion del configurador como herramienta adicional para apoyar la experiencia comercial y operativa de Sixinch.</p>
           </article>
           <article className="activation-card">
@@ -299,7 +304,7 @@ function App() {
           ))}
           <div className="comparison-row comparison-total" role="row">
             <span role="cell">Lectura financiera</span>
-            <strong role="cell">Sixinch recibe Violeta como obsequio para validar su utilidad.</strong>
+            <strong role="cell">Sixinch recibe Violeta como obsequio y sin cobro de desarrollo.</strong>
             <strong role="cell">El configurador se separa con implementacion y gestion mensual claras.</strong>
           </div>
         </div>
